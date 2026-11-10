@@ -1,6 +1,6 @@
 {
   "minVersion": "0.4",
-  "headerImage": "",
+  "headerImage": "https://repo.obsid1an.app/assets/banner.png",
   "tintColor": "#7e83ff",
   "class": "DepictionTabView",
   "tabs": [
@@ -9,41 +9,109 @@
       "tabname": "Details",
       "views": [
         {
-          "class": "DepictionMarkdownView",
-          "markdown": "ShardFetch is a system information tool for jailbroken iOS, inspired by neofetch and fastfetch.\n\nRun `shardfetch` in your terminal to see your device info alongside a rainbow Apple logo."
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 8
+          "class": "DepictionSubheaderView",
+          "title": "About",
+          "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "Displays a rainbow Apple logo alongside system info:\n\n`OS` · `Device` · `Jailbreak` · `CPU` · `Memory` · `Storage` · `Battery` · `Shell` · `Terminal`"
+          "markdown": "ShardFetch is a system information tool for jailbroken iOS, inspired by neofetch and fastfetch.\n\nRun `shardfetch` in your terminal to see your device info alongside a **rainbow Apple logo** with ANSI colors."
         },
         {
           "class": "DepictionSeparatorView"
         },
         {
-          "class": "DepictionHeaderView",
-          "title": "Features"
+          "class": "DepictionSubheaderView",
+          "title": "What It Shows",
+          "useBoldText": true
         },
         {
-          "class": "DepictionMarkdownView",
-          "markdown": "- Rainbow Apple ASCII art with ANSI colors\n- Device model, iOS version, jailbreak detection\n- CPU chip name and core count\n- Memory and storage usage\n- Battery level and charging status\n- Shell and terminal detection\n- Auto-detects rootful, rootless, and roothide"
+          "class": "DepictionTableTextView",
+          "title": "OS",
+          "text": "iOS version"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Device",
+          "text": "Model name"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreak",
+          "text": "Name + type"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "CPU",
+          "text": "Chip + core count"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Memory",
+          "text": "Used / Total"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Storage",
+          "text": "Used / Total"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Battery",
+          "text": "Level + charging"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Shell",
+          "text": "zsh, bash, etc."
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Terminal",
+          "text": "NewTerm, etc."
         },
         {
           "class": "DepictionSeparatorView"
         },
         {
-          "class": "DepictionHeaderView",
-          "title": "Compatibility"
+          "class": "DepictionSubheaderView",
+          "title": "Features",
+          "useBoldText": true
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "- iOS 7.0 — 27.0.1 (arm64)\n- Rootful, Rootless, and Roothide\n- iPhone 5s through iPhone 16 and all arm64 iPads"
+          "markdown": "- Rainbow Apple ASCII art with ANSI terminal colors\n- Auto-detects jailbreak: rootful, rootless, roothide\n- Detects Obsid1an, Dopamine, palera1n, unc0ver, checkra1n, Taurine, XinaA15\n- Device table: iPhone 5s through iPhone 16, all arm64 iPads\n- Lightweight — single binary, no dependencies"
         },
         {
           "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Compatibility",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS",
+          "text": "7.0 — 27.0.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Architecture",
+          "text": "arm64"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Jailbreak Type",
+          "text": "Rootful, Rootless, Roothide"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Information",
+          "useBoldText": true
         },
         {
           "class": "DepictionTableTextView",
@@ -70,6 +138,12 @@
         },
         {
           "class": "DepictionTableButtonView",
+          "title": "View Full Depiction",
+          "action": "https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.html",
+          "openExternal": true
+        },
+        {
+          "class": "DepictionTableButtonView",
           "title": "Source Code",
           "action": "https://github.com/kilianbalaguer/Obsid1an/tree/main/tweaks/shardfetch",
           "openExternal": true
@@ -82,7 +156,14 @@
       "views": [
         {
           "class": "DepictionSubheaderView",
-          "title": "1.0.0"
+          "title": "1.0.0",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionLabelView",
+          "text": "November 2026",
+          "textColor": "#999999",
+          "fontSize": 14
         },
         {
           "class": "DepictionMarkdownView",

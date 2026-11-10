@@ -10,6 +10,7 @@ Tag: purpose::console
 Icon: https://repo.obsid1an.app/CydiaIcon.png
 Homepage: https://obsid1an.app
 Depiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.html
+SileoDepiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.json
 Filename: debs/com.obsid1an.shardfetch_1.0.0_iphoneos-arm64.deb
 Size: 16792
 MD5sum: 7562be26b36eb57a4cac02a95ecffd64

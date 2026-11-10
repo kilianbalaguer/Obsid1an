@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #000;
+    --surface: #1c1c1e;
+    --border: rgba(255,255,255,0.08);
+    --fg: #fff;
+    --fg-dim: rgba(255,255,255,0.45);
+    --green: #34c759;
+    --orange: #ff9f0a;
+    --red: #ff453a;
+    color-scheme: dark;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fff;
+      --surface: #f2f2f7;
+      --border: rgba(0,0,0,0.08);
+      --fg: #000;
+      --fg-dim: rgba(0,0,0,0.4);
+      color-scheme: light;
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    padding: 16px;
+  }
+
+  .banner {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .banner img {
+    width: 100%;
+    display: block;
+  }
+
+  .screenshots {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -16px 20px;
+    padding: 0 16px;
+  }
+
+  .screenshots::-webkit-scrollbar { display: none; }
+
+  .screenshots img {
+    height: 320px;
+    border-radius: 12px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  .section {
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--fg-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--fg);
+  }
+
+  .card {
+    background: var(--surface);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+
+  .card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 16px;
+  }
+
+  .card-row + .card-row {
+    border-top: 1px solid var(--border);
+  }
+
+  .card-row .label {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .card-row .value {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--fg-dim);
+  }
+
+  .badge {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 8px;
+  }
+
+  .badge-supported {
+    background: rgba(52,199,89,0.15);
+    color: var(--green);
+  }
+
+  .badge-untested {
+    background: rgba(255,159,10,0.15);
+    color: var(--orange);
+  }
+
+  .badge-unsupported {
+    background: rgba(255,69,58,0.15);
+    color: var(--red);
+  }
+
+  .changelog {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--fg);
+  }
+
+  .changelog .version {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .changelog .changes {
+    color: var(--fg-dim);
+    margin-bottom: 14px;
+  }
+
+  .footer-note {
+    text-align: center;
+    font-size: 12px;
+    color: var(--fg-dim);
+    padding: 16px 0;
+  }
+
+  .footer-note a {
+    color: var(--fg-dim);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<!--
+  DEPICTION TEMPLATE
+
+  Duplicate this file for each tweak:
+    depictions/com.obsid1an.tweakname.html
+
+  Replace the placeholder content below.
+  Add screenshots to assets/ folder.
+-->
+
+<div class="screenshots">
+  <!-- <img src="../assets/tweak-screen1.png"> -->
+  <!-- <img src="../assets/tweak-screen2.png"> -->
+</div>
+
+<div class="section">
+  <div class="section-title">About</div>
+  <p class="description">
+    Tweak description goes here. Explain what it does, how it works, and what the user should expect.
+  </p>
+</div>
+
+<div class="section">
+  <div class="section-title">Compatibility</div>
+  <div class="card" id="compat-card">
+    <div class="card-row">
+      <span class="label">Device</span>
+      <span class="value" id="device-name">—</span>
+    </div>
+    <div class="card-row">
+      <span class="label">iOS Version</span>
+      <span class="value" id="ios-version">—</span>
+    </div>
+    <div class="card-row">
+      <span class="label">Status</span>
+      <span id="compat-badge"></span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Information</div>
+  <div class="card">
+    <div class="card-row">
+      <span class="label">Version</span>
+      <span class="value">1.0.0</span>
+    </div>
+    <div class="card-row">
+      <span class="label">Developer</span>
+      <span class="value">Kilian Balaguer</span>
+    </div>
+    <div class="card-row">
+      <span class="label">Section</span>
+      <span class="value">Tweaks</span>
+    </div>
+    <div class="card-row">
+      <span class="label">Size</span>
+      <span class="value">—</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">What's New</div>
+  <div class="changelog">
+    <div class="version">1.0.0</div>
+    <div class="changes">Initial release.</div>
+  </div>
+</div>
+
+<p class="footer-note"><a href="https://repo.obsid1an.app">Obsid1an Repository</a></p>
+
+<script>
+// --- CONFIGURATION ---
+// Set supported iOS versions and devices per tweak
+var SUPPORTED_IOS = ['27.0', '27.0.1'];
+var UNTESTED_IOS = ['27.1'];
+// Leave empty to support all devices
+var SUPPORTED_DEVICES = [];
+
+// --- AUTO-DETECT ---
+(function() {
+  var ua = navigator.userAgent;
+
+  // Device name
+  var deviceEl = document.getElementById('device-name');
+  if (/iPad/.test(ua)) deviceEl.textContent = 'iPad';
+  else if (/iPhone/.test(ua)) deviceEl.textContent = 'iPhone';
+  else deviceEl.textContent = 'Unknown';
+
+  // iOS version
+  var iosEl = document.getElementById('ios-version');
+  var match = ua.match(/OS (\d+[_\.]\d+[_\.]?\d*)/);
+  var iosVersion = match ? match[1].replace(/_/g, '.') : null;
+  iosEl.textContent = iosVersion || 'Unknown';
+
+  // Compatibility badge
+  var badgeEl = document.getElementById('compat-badge');
+  if (!iosVersion) {
+    setBadge(badgeEl, 'Unknown', 'untested');
+  } else {
+    var short = iosVersion.split('.').slice(0, 2).join('.');
+    if (SUPPORTED_IOS.indexOf(iosVersion) !== -1 || SUPPORTED_IOS.indexOf(short) !== -1) {
+      setBadge(badgeEl, 'Supported', 'supported');
+    } else if (UNTESTED_IOS.indexOf(iosVersion) !== -1 || UNTESTED_IOS.indexOf(short) !== -1) {
+      setBadge(badgeEl, 'Untested', 'untested');
+    } else {
+      setBadge(badgeEl, 'Unsupported', 'unsupported');
+    }
+  }
+
+  function setBadge(el, text, type) {
+    el.className = 'badge badge-' + type;
+    el.textContent = text;
+  }
+})();
+</script>
+
+</body>
+</html>

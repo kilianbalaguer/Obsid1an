@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 71;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02FF727830A2D53E006F184F /* Obsid1anIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 02FF727730A2D53E006F184F /* Obsid1anIcon.icon */; };
+		AA1000010000000000000001 /* Obsid1anApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2000010000000000000001 /* Obsid1anApp.swift */; };
+		AA1000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2000010000000000000002 /* ContentView.swift */; };
+		AA1000010000000000000003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2000010000000000000003 /* Assets.xcassets */; };
+		BB0000020000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000001 /* SettingsView.swift */; };
+		BB0000020000000000000002 /* ExploitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000002 /* ExploitManager.swift */; };
+		BB0000020000000000000003 /* CalifExploit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000003 /* CalifExploit.swift */; };
+		BB0000020000000000000004 /* RespringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000004 /* RespringManager.swift */; };
+		BB0000020000000000000005 /* JailbreakSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0000010000000000000005 /* JailbreakSettings.swift */; };
+		DD0000020000000000000001 /* BootstrapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000010000000000000001 /* BootstrapManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02FF727730A2D53E006F184F /* Obsid1anIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Obsid1anIcon.icon; sourceTree = "<group>"; };
+		AA2000010000000000000001 /* Obsid1anApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obsid1anApp.swift; sourceTree = "<group>"; };
+		AA2000010000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA2000010000000000000003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA2000010000000000000004 /* Obsid1an.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Obsid1an.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2000010000000000000005 /* BuildNumber.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BuildNumber.xcconfig; sourceTree = "<group>"; };
+		BB0000010000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB0000010000000000000002 /* ExploitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitManager.swift; sourceTree = "<group>"; };
+		BB0000010000000000000003 /* CalifExploit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalifExploit.swift; sourceTree = "<group>"; };
+		BB0000010000000000000004 /* RespringManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespringManager.swift; sourceTree = "<group>"; };
+		BB0000010000000000000005 /* JailbreakSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakSettings.swift; sourceTree = "<group>"; };
+		DD0000010000000000000001 /* BootstrapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootstrapManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA4000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				AA4000010000000000000002 /* Obsid1an */,
+				AA4000010000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA4000010000000000000002 /* Obsid1an */ = {
+			isa = PBXGroup;
+			children = (
+				CC0000010000000000000001 /* App */,
+				CC0000010000000000000002 /* Views */,
+				CC0000010000000000000003 /* Exploit */,
+				CC0000010000000000000004 /* System */,
+				CC0000010000000000000005 /* Resources */,
+			CC0000010000000000000006 /* Bootstrap */,
+			);
+			path = Obsid1an;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000006 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				DD0000010000000000000001 /* BootstrapManager.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA2000010000000000000001 /* Obsid1anApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000002 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA2000010000000000000002 /* ContentView.swift */,
+				BB0000010000000000000001 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000003 /* Exploit */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000010000000000000003 /* CalifExploit.swift */,
+				BB0000010000000000000002 /* ExploitManager.swift */,
+			);
+			path = Exploit;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000004 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				BB0000010000000000000005 /* JailbreakSettings.swift */,
+				BB0000010000000000000004 /* RespringManager.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		CC0000010000000000000005 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA2000010000000000000003 /* Assets.xcassets */,
+				02FF727730A2D53E006F184F /* Obsid1anIcon.icon */,
+				AA2000010000000000000005 /* BuildNumber.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA4000010000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA2000010000000000000004 /* Obsid1an.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA5000010000000000000001 /* Obsid1an */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7000010000000000000002 /* Build configuration list for PBXNativeTarget "Obsid1an" */;
+			buildPhases = (
+				AA6000010000000000000001 /* Sources */,
+				AA3000010000000000000001 /* Frameworks */,
+				AA6000010000000000000002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Obsid1an;
+			productName = Obsid1an;
+			productReference = AA2000010000000000000004 /* Obsid1an.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA8000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					AA5000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AA7000010000000000000001 /* Build configuration list for PBXProject "Obsid1an" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA4000010000000000000001;
+			productRefGroup = AA4000010000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA5000010000000000000001 /* Obsid1an */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA6000010000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1000010000000000000003 /* Assets.xcassets in Resources */,
+				02FF727830A2D53E006F184F /* Obsid1anIcon.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA6000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA1000010000000000000001 /* Obsid1anApp.swift in Sources */,
+				AA1000010000000000000002 /* ContentView.swift in Sources */,
+				BB0000020000000000000001 /* SettingsView.swift in Sources */,
+				BB0000020000000000000002 /* ExploitManager.swift in Sources */,
+				BB0000020000000000000003 /* CalifExploit.swift in Sources */,
+				BB0000020000000000000004 /* RespringManager.swift in Sources */,
+				BB0000020000000000000005 /* JailbreakSettings.swift in Sources */,
+				DD0000020000000000000001 /* BootstrapManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA9000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA9000010000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA9000010000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = CC0000010000000000000005 /* Resources */;
+			baseConfigurationReferenceRelativePath = BuildNumber.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Obsid1anIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DEVELOPMENT_TEAM = 373V4B5FK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Obsid1an;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.balaguer.kilian.obsid1an;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA9000010000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = CC0000010000000000000005 /* Resources */;
+			baseConfigurationReferenceRelativePath = BuildNumber.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Obsid1anIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DEVELOPMENT_TEAM = 373V4B5FK8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Obsid1an;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.balaguer.kilian.obsid1an;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7000010000000000000001 /* Build configuration list for PBXProject "Obsid1an" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9000010000000000000001 /* Debug */,
+				AA9000010000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA7000010000000000000002 /* Build configuration list for PBXNativeTarget "Obsid1an" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA9000010000000000000003 /* Debug */,
+				AA9000010000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA8000010000000000000001 /* Project object */;
+}

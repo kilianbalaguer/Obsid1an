@@ -1,0 +1,77 @@
+{
+  "minVersion": "0.1",
+  "headerImage": "",
+  "tintColor": "#7e83ff",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionScreenshotsView",
+          "screenshots": [],
+          "itemCornerRadius": 12,
+          "itemSize": "{160, 320}"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Tweak description goes here.\n\nExplain what it does and what the user should expect."
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "Kilian Balaguer"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Compatibility",
+          "text": "iOS 27.0 — 27.0.1"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Tweaks"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source Code",
+          "action": "https://github.com/kilianbalaguer",
+          "openExternal": true
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "1.0.0"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Initial release"
+        }
+      ],
+      "class": "DepictionStackView"
+    }
+  ],
+  "class": "DepictionTabView"
+}

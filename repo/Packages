@@ -1,0 +1,17 @@
+Package: com.obsid1an.shardfetch
+Name: ShardFetch
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: System info fetch tool for jailbroken iOS. Rainbow Apple logo with device, OS, jailbreak, CPU, memory, battery and more.
+Maintainer: Kilian Balaguer
+Author: Kilian Balaguer
+Section: Utilities
+Tag: purpose::console
+Homepage: https://obsid1an.app
+Depiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.html
+SileoDepiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.json
+Filename: debs/com.obsid1an.shardfetch_1.0.0_iphoneos-arm64.deb
+Size: 16792
+MD5sum: 7562be26b36eb57a4cac02a95ecffd64
+SHA1: 51d1b81cfc66d8e830689fb873bc95f600e42532
+SHA256: 60174b18b7b736e84f1ea5ef087e10da82ae38ecbab2513e0e3c7c4a71dde08a

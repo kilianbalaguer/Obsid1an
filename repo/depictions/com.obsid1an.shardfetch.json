@@ -1,0 +1,56 @@
+{
+  "minVersion": "0.1",
+  "headerImage": "",
+  "tintColor": "#7e83ff",
+  "tabs": [
+    {
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "ShardFetch is a system information tool for jailbroken iOS, inspired by neofetch and fastfetch.\n\nRun `shardfetch` in your terminal to see your device info alongside a rainbow Apple logo.\n\n**Displays:**\n- iOS version & device model\n- Jailbreak name & type (rootful/rootless/roothide)\n- Uptime, CPU, memory, storage\n- Battery status\n- Shell & terminal\n\n**Compatibility:**\n- iOS 7.0 — 27.0.1 (arm64)\n- Rootful, Rootless, and Roothide environments\n- Auto-detects jailbreak type"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Author",
+          "text": "Kilian Balaguer"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Version",
+          "text": "1.0.0"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Section",
+          "text": "Utilities"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Source Code",
+          "action": "https://github.com/kilianbalaguer/Obsid1an/tree/main/tweaks/shardfetch",
+          "openExternal": true
+        }
+      ],
+      "class": "DepictionStackView"
+    },
+    {
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "1.0.0 — November 2026"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Initial release\n- Rainbow Apple ASCII art\n- Device, OS, jailbreak, CPU, memory, storage, battery detection\n- Rootful, rootless, and roothide support"
+        }
+      ],
+      "class": "DepictionStackView"
+    }
+  ],
+  "class": "DepictionTabView"
+}

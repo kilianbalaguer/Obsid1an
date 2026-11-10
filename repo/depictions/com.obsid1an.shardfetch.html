@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShardFetch</title>
+<style>
+  :root {
+    --bg: #0d0d12;
+    --card: #16161e;
+    --border: rgba(255,255,255,0.06);
+    --text: #e4e4e7;
+    --dim: rgba(255,255,255,0.4);
+    --accent: #7e83ff;
+    --green: #4ade80;
+    --orange: #fb923c;
+    --red: #f87171;
+    font-family: -apple-system, system-ui, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); padding: 20px; line-height: 1.6; }
+  .header { text-align: center; margin-bottom: 32px; }
+  .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 4px; }
+  .header .version { color: var(--dim); font-size: 14px; }
+  .header .author { color: var(--accent); font-size: 14px; margin-top: 4px; }
+  .preview {
+    background: #000;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    overflow-x: auto;
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 11px;
+    line-height: 1.4;
+    white-space: pre;
+    color: #e4e4e7;
+  }
+  .g { color: #4ade80; }
+  .y { color: #facc15; }
+  .o { color: #fb923c; }
+  .r { color: #f87171; }
+  .p { color: #c084fc; }
+  .b { color: #60a5fa; }
+  .w { font-weight: 700; }
+  .d { opacity: 0.5; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 16px;
+  }
+  .card h3 { font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+  .card p, .card li { font-size: 14px; color: var(--dim); }
+  .card ul { padding-left: 18px; }
+  .card li { margin-bottom: 4px; }
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .badge-green { background: rgba(74,222,128,0.15); color: var(--green); }
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-label { color: var(--dim); }
+  .changelog-entry { margin-bottom: 16px; }
+  .changelog-entry .ver { font-weight: 600; color: var(--accent); }
+  .changelog-entry .date { color: var(--dim); font-size: 13px; margin-left: 8px; }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>ShardFetch</h1>
+    <div class="version">v1.0.0 &middot; <span class="badge badge-green">Supported</span></div>
+    <div class="author">by Kilian Balaguer</div>
+  </div>
+
+  <div class="preview"><span class="g">                 'c.          </span>  <span class="w">mobile</span>@<span class="w">iPhone</span>
+<span class="g">              ,xNMM.          </span>  <span class="d">-------------------</span>
+<span class="g">            .OMMMMo           </span>  <span class="w">OS</span>:        iOS 27.0.1
+<span class="y">            OMMM0,            </span>  <span class="w">Device</span>:    iPhone 15 Pro
+<span class="y">  .;loddo:' loolloddol;.     </span>  <span class="w">Jailbreak</span>: Obsid1an (rootful)
+<span class="y">cKMMMMMMMMMMNWMMMMMMMMMM0:   </span>  <span class="w">Uptime</span>:    2 days, 5 hours
+<span class="o">.KMMMMMMMMMMMMMMMMMMMMMMMWd. </span>  <span class="w">CPU</span>:       A17 Pro (6 cores)
+<span class="o"> XMMMMMMMMMMMMMMMMMMMMMMMX. </span>  <span class="w">Memory</span>:    2.1 GiB / 6.0 GiB
+<span class="o">;MMMMMMMMMMMMMMMMMMMMMMMM:   </span>  <span class="w">Storage</span>:   89.2 GiB / 256.0 GiB
+<span class="r">:MMMMMMMMMMMMMMMMMMMMMMMM:   </span>  <span class="w">Battery</span>:   87% (charging)
+<span class="r">.MMMMMMMMMMMMMMMMMMMMMMMMX.  </span>  <span class="w">Shell</span>:     zsh
+<span class="p"> kMMMMMMMMMMMMMMMMMMMMMMMMWd </span>  <span class="w">Terminal</span>:  NewTerm
+<span class="p"> .XMMMMMMMMMMMMMMMMMMMMMMMMk </span>
+<span class="p">  .XMMMMMMMMMMMMMMMMMMMMMMK. </span>  <span style="background:#000;color:#000">   </span><span style="background:#f87171;color:#f87171">   </span><span style="background:#4ade80;color:#4ade80">   </span><span style="background:#facc15;color:#facc15">   </span><span style="background:#60a5fa;color:#60a5fa">   </span><span style="background:#c084fc;color:#c084fc">   </span><span style="background:#06b6d4;color:#06b6d4">   </span><span style="background:#fff;color:#fff">   </span>
+<span class="b">    kMMMMMMMMMMMMMMMMMMMMd    </span>
+<span class="b">     ;KMMMMMMMWXXWMMMMMk.    </span>
+<span class="b">       .cooc,.    .,coo:.    </span></div>
+
+  <div class="card">
+    <h3>Description</h3>
+    <p>ShardFetch is a system information tool for jailbroken iOS devices, inspired by neofetch and fastfetch. Run <code>shardfetch</code> in your terminal to see your device info alongside a rainbow Apple logo.</p>
+    <br>
+    <p>Displays: iOS version, device model, jailbreak type, uptime, CPU, memory, storage, battery, shell, and terminal.</p>
+  </div>
+
+  <div class="card">
+    <h3>Compatibility</h3>
+    <ul>
+      <li>iOS 7.0 — 27.0.1 (arm64)</li>
+      <li>Rootful, Rootless, and Roothide</li>
+      <li>Auto-detects jailbreak environment</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Information</h3>
+    <div class="info-row"><span class="info-label">Package ID</span><span>com.obsid1an.shardfetch</span></div>
+    <div class="info-row"><span class="info-label">Version</span><span>1.0.0</span></div>
+    <div class="info-row"><span class="info-label">Author</span><span>Kilian Balaguer</span></div>
+    <div class="info-row"><span class="info-label">Section</span><span>Utilities</span></div>
+    <div class="info-row"><span class="info-label">Repo</span><span>repo.obsid1an.app</span></div>
+  </div>
+
+  <div class="card">
+    <h3>Changelog</h3>
+    <div class="changelog-entry">
+      <span class="ver">1.0.0</span><span class="date">November 2026</span>
+      <ul style="margin-top: 6px;">
+        <li>Initial release</li>
+        <li>Rainbow Apple ASCII art</li>
+        <li>Device, OS, jailbreak, CPU, memory, storage, battery detection</li>
+        <li>Rootful, rootless, and roothide support</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

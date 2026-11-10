@@ -18,7 +18,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "```\n                 'c.\n              ,xNMM.           mobile@iPhone\n            .OMMMMo            ───────────────\n            OMMM0,             OS:        iOS 27.0.1\n  .;loddo:' loolloddol;.      Device:    iPhone 15 Pro\ncKMMMMMMMMMMNWMMMMMMMMMM0:    Jailbreak: Obsid1an (rootful)\n.KMMMMMMMMMMMMMMMMMMMMMMMWd.  CPU:       A17 Pro (6 cores)\n XMMMMMMMMMMMMMMMMMMMMMMMX.  Memory:    2.1 GiB / 6.0 GiB\n;MMMMMMMMMMMMMMMMMMMMMMMM:    Storage:   89 GiB / 256 GiB\n:MMMMMMMMMMMMMMMMMMMMMMMM:    Battery:   87% (charging)\n.MMMMMMMMMMMMMMMMMMMMMMMMX.   Shell:     zsh\n kMMMMMMMMMMMMMMMMMMMMMMMMWd  Terminal:  NewTerm\n  .XMMMMMMMMMMMMMMMMMMMMMMK.\n    kMMMMMMMMMMMMMMMMMMMMd\n     ;KMMMMMMMWXXWMMMMMk.\n       .cooc,.    .,coo:.\n```"
+          "markdown": "Displays a rainbow Apple logo alongside system info:\n\n`OS` · `Device` · `Jailbreak` · `CPU` · `Memory` · `Storage` · `Battery` · `Shell` · `Terminal`"
         },
         {
           "class": "DepictionSeparatorView"

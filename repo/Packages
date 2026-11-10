@@ -7,6 +7,7 @@ Maintainer: Kilian Balaguer
 Author: Kilian Balaguer
 Section: Utilities
 Tag: purpose::console
+Icon: https://repo.obsid1an.app/CydiaIcon.png
 Homepage: https://obsid1an.app
 Depiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.html
 SileoDepiction: https://repo.obsid1an.app/depictions/com.obsid1an.shardfetch.json

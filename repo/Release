@@ -3,18 +3,18 @@ Label: Obsid1an
 Suite: stable
 Version: 1.0
 Codename: obsid1an
-Architectures: iphoneos-arm64
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Official Obsid1an Repository
 MD5Sum:
- 6066185bc35a5f04f5b7c44327af0ee7 748 Packages
- 34c0eb5d311920e9dc951644d2dbb348 458 Packages.gz
- 32c55c5687094576c0dbbd635e328a13 527 Packages.bz2
- 7d7bdd5cef3a5fceb1d73bd847e87edc 536 Packages.xz
- a0d8f8549a61851e2e7342bc7630c4db 451 Packages.zst
+ 65ae5f7c33c90a5f399abf13005daff0 794 Packages
+ 93dd93949b0322620b8cc2eff7246720 474 Packages.gz
+ e109b68f027900a149fc9b8a9370619f 538 Packages.bz2
+ 095a146af0f5a3eb3e947c83da2a2670 552 Packages.xz
+ 4cc0f0adecd229a78b0fddcd0f2dc3b1 470 Packages.zst
 SHA256:
- b83c8d860c1e6263a17608a10ceb91d350e29f4f840b4222ef8e29a86b674073 748 Packages
- eaf14c9010bce699a4d7d6cad452146ec252b354fdd60bb4d8653b507f5516c4 458 Packages.gz
- cf711041bcae7c25e8751e730c53fb54302c7dea69eae2631ab54a00b6ddef07 527 Packages.bz2
- da63fb168a7e3ed7ec721e42ad2215e48dc5bdeb7d3f3f849e1b8fda36acdfda 536 Packages.xz
- 5291649d2dc049bc4c046d56cbf1269a41759dc7599e2fc247d7a31cc9c1c550 451 Packages.zst
+ f007d63aafc5521d0d7c9535bbb3192a11370ff79534913c3ce04610c43f6110 794 Packages
+ 39118f5d947a32c34511a55645975d3c30439f69bfaab5a7c1010297fc05c783 474 Packages.gz
+ 88a4cbb309f97cf3481a222d6200b926663d049f43426776399aaa957fec65f9 538 Packages.bz2
+ 04cb6e98eee7a5bb8ab6f2f016759bf17dd43dffebbbec725fb198eff8db2bf1 552 Packages.xz
+ eaac90fa9351f08a5a5ebf52e01451ef96c5c27376584b442fe8b16f2d243d51 470 Packages.zst

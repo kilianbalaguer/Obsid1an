@@ -8,14 +8,42 @@
       "views": [
         {
           "class": "DepictionMarkdownView",
-          "markdown": "ShardFetch is a system information tool for jailbroken iOS, inspired by neofetch and fastfetch.\n\nRun `shardfetch` in your terminal to see your device info alongside a rainbow Apple logo.\n\n**Displays:**\n- iOS version & device model\n- Jailbreak name & type (rootful/rootless/roothide)\n- Uptime, CPU, memory, storage\n- Battery status\n- Shell & terminal\n\n**Compatibility:**\n- iOS 7.0 — 27.0.1 (arm64)\n- Rootful, Rootless, and Roothide environments\n- Auto-detects jailbreak type"
+          "markdown": "ShardFetch is a system information tool for jailbroken iOS, inspired by neofetch and fastfetch.\n\nRun `shardfetch` in your terminal to see your device info alongside a rainbow Apple logo.",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "```\n                 'c.\n              ,xNMM.           mobile@iPhone\n            .OMMMMo            ───────────────\n            OMMM0,             OS:        iOS 27.0.1\n  .;loddo:' loolloddol;.      Device:    iPhone 15 Pro\ncKMMMMMMMMMMNWMMMMMMMMMM0:    Jailbreak: Obsid1an (rootful)\n.KMMMMMMMMMMMMMMMMMMMMMMMWd.  CPU:       A17 Pro (6 cores)\n XMMMMMMMMMMMMMMMMMMMMMMMX.  Memory:    2.1 GiB / 6.0 GiB\n;MMMMMMMMMMMMMMMMMMMMMMMM:    Storage:   89 GiB / 256 GiB\n:MMMMMMMMMMMMMMMMMMMMMMMM:    Battery:   87% (charging)\n.MMMMMMMMMMMMMMMMMMMMMMMMX.   Shell:     zsh\n kMMMMMMMMMMMMMMMMMMMMMMMMWd  Terminal:  NewTerm\n  .XMMMMMMMMMMMMMMMMMMMMMMK.\n    kMMMMMMMMMMMMMMMMMMMMd\n     ;KMMMMMMMWXXWMMMMMk.\n       .cooc,.    .,coo:.\n```",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Features"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Rainbow Apple ASCII art with ANSI colors\n- Device model, iOS version, jailbreak detection\n- CPU chip name and core count\n- Memory and storage usage\n- Battery level and charging status\n- Shell and terminal detection\n- Auto-detects rootful, rootless, and roothide"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Compatibility"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- iOS 7.0 — 27.0.1 (arm64)\n- Rootful, Rootless, and Roothide\n- iPhone 5s through iPhone 16 and all arm64 iPads"
         },
         {
           "class": "DepictionSeparatorView"
         },
         {
           "class": "DepictionTableTextView",
-          "title": "Author",
+          "title": "Developer",
           "text": "Kilian Balaguer"
         },
         {
@@ -27,6 +55,14 @@
           "class": "DepictionTableTextView",
           "title": "Section",
           "text": "Utilities"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Package ID",
+          "text": "com.obsid1an.shardfetch"
+        },
+        {
+          "class": "DepictionSeparatorView"
         },
         {
           "class": "DepictionTableButtonView",
@@ -46,7 +82,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "- Initial release\n- Rainbow Apple ASCII art\n- Device, OS, jailbreak, CPU, memory, storage, battery detection\n- Rootful, rootless, and roothide support"
+          "markdown": "- Initial release\n- Rainbow Apple ASCII art\n- Full system info: device, OS, jailbreak, CPU, memory, storage, battery\n- Rootful, rootless, and roothide support\n- Device table: iPhone 5s through iPhone 16, all arm64 iPads"
         }
       ],
       "class": "DepictionStackView"
